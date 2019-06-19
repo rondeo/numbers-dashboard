@@ -1,0 +1,213 @@
+/* .nav-underline .active {
+    font-weight: 500;
+    color: var(--gray-dark);
+}
+
+.nav-underline .nav-link {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: .875rem;
+    color: var(--secondary);
+} */
+
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+}
+
+/* .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    color: rgba(255, 255, 255, .75);
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+} */
+
+.number {
+  border: 1px solid rgb(227, 227, 227);
+  border-radius: 25px;
+  /* float: left; */
+  /* font-family: Helvetica Neue; */
+  font-size: 26px;
+  font-weight: bold;
+  height: 46px;
+  /* margin: 5px 10px 5px 0px; */
+  padding: 2px;
+  text-align: center;
+  vertical-align: middle;
+  min-width: 46px;
+  cursor: pointer;
+}
+
+.whiteball {
+  background: rgba(0, 0, 0, 0) radial-gradient(at 10% 5%, rgb(255, 255, 255) 0px, rgb(224, 224, 224) 50%) repeat scroll 0% 0%;
+  color: black;
+}
+
+.powerball {
+  background: rgba(0, 0, 0, 0) radial-gradient(at 5% 5%, rgb(255, 255, 255) 0px, rgb(195, 31, 58) 75%) repeat scroll 0% 0%;
+  color: white;
+}
+
+.center-column {
+	display: flex;
+	justify-content: center;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+/* Loader Transitions */
+section.numbers-section,
+section.drawings-section {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.numbers-enter {
+  opacity: 0;
+}
+.numbers-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+  -webkit-transition: opacity 500ms ease-in;
+
+}
+.numbers-exit {
+  opacity: 1;
+}
+.numbers-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+  -webkit-transition: opacity 300ms ease-out;
+}
+
+/* Message Transitions */
+.message-enter {
+  opacity: 0.01;
+}
+.message-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.message-exit {
+  opacity: 1;
+}
+.message-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-out;
+}
+
+/* Tab Transitions */
+.tab-fade-enter {
+  opacity: 0.01;
+}
+.tab-fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.tab-fade-exit {
+  opacity: 1;
+}
+.tab-fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-out;
+}
+
+/* Routing Section */
+div.transition-group {
+  position: relative;
+}
+section.route-section {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* .button:active,
+ button:active,
+.button:focus,
+ button:focus,
+.button:hover,
+ button:hover{
+    outline:none !important;
+} */
+
+.hoverSpinner {
+  -webkit-transition: width 750ms, height 750ms, -webkit-transform 750ms; /* Safari */
+  transition: width 750ms, height 750ms, transform 750ms;
+  cursor: pointer;
+}
+
+.hoverSpinner:hover {
+  /* -webkit-animation: spin 0.5s ease-in-out 1;
+  animation: spin 0.5s ease-in-out 1; */
+  -webkit-transform: rotate(360deg); /* Safari */
+  transform: rotate(360deg);
+  font-size: 1em;
+}
+
+.loader {
+  position: relative;
+  /* left: 50%;
+  top: 50%; */
+  z-index: 1;
+  /* width: 150px;
+  height: 150px; */
+  /* margin: -75px 0 0 -75px; */
+  margin: auto;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #dc3545;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.numbers-table tbody tr:hover,
+.drawings-table tbody tr:hover  {
+  cursor: pointer;
+}
+
+/* 
+.drawings-table tr td:hover span  {
+  border: 1px solid rgb(227, 227, 227);
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0) radial-gradient(at 10% 5%, rgb(255, 255, 255) 0px, rgb(224, 224, 224) 50%) repeat scroll 0% 0%;
+  color: white;
+}
+
+.drawings-table tr td:hover span.single  {
+  padding: 2px 7px;
+}
+
+.drawings-table tr td:hover span.double  {
+  padding: 2px 4px;
+} 
+*/
